@@ -1,13 +1,14 @@
-.sign-in{
+.sign-in {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.sign-in .log-in{
-    min-width: 400px;
-    min-height: 200px;
+
+.sign-in .log-in {
+    max-width: 100%;
+    max-height: 100%;
     background-color: #f3f3f3;
     border: 10px solid #f3f3f3;
     border-radius: 30px;
@@ -15,7 +16,8 @@
     outline-style: outset;
     outline-color: #f3f3f3;
 }
-.log-in h4{
+
+.log-in h4 {
     display: block;
     text-align: center;
     text-transform: capitalize;
@@ -23,19 +25,21 @@
     margin-bottom: 22px;
     margin-top: -15px;
 }
-.log-in .log-social{
+
+.log-in .log-social {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 12px;
 }
-.log-in .log-social a:first-child{
+
+.log-in .log-social a:first-child {
     background-color: blue;
     height: 2pc;
     color: white;
     font-size: 14px;
     text-align: center;
-    min-width: 11pc;
+    max-width: 11pc;
     margin-right: 12px;
     text-decoration: none;
     font-weight: 400;
@@ -43,33 +47,54 @@
     outline-style: outset;
     outline-color: blue;
 }
-.log-in .log-social a:last-child{
+
+.log-in .log-social a:last-child {
     background-color: crimson;
     height: 2pc;
     color: white;
     font-size: 14px;
     text-align: center;
-    min-width: 11pc;
+    max-width: 11pc;
     text-decoration: none;
     font-weight: 400;
     padding: 5px;
     outline-style: outset;
     outline-color: crimson;
 }
-.log-in h5{
+
+@media (max-width: 767px) {
+    .log-in .log-social a:first-child,
+    .log-in .log-social a:last-child {
+        font-size: 9px;
+        max-width: 100%;
+        padding: 8px;
+    }
+}
+
+.log-in h5 {
     display: block;
     text-align: center;
     text-transform: capitalize;
     font-weight: 400;
     margin-bottom: 12px;
 }
-.log-in .log-text{
+
+.log-in .log-text {
     display: flex;
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 0;
 }
-.log-in .log-text input{
+
+.log-in .log-text label {
+    font-size: 17px;
+    color: red;
+    font-weight: 400;
+    margin: 0px auto 2px auto;
+    text-transform: uppercase;
+}
+
+.log-in .log-text input {
     padding: 8px;
     font-weight: 300;
     font-size: 15px;
@@ -77,10 +102,12 @@
     color: var(--brand-color);
     font-weight: 400;
 }
-.log-in .log-text input:focus-visible{
+
+.log-in .log-text input:focus-visible {
     outline: none;
 }
-.log-in .log-text input:last-child{
+
+.log-in .log-text input:last-child {
     display: block;
     width: 100%;
     height: 40px;
@@ -93,18 +120,21 @@
     text-decoration: none;
     border-radius: 14px;
 }
-.log-in .log-text .remember-me{
+
+.log-in .log-text .remember-me {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     margin-top: 10px;
 }
-.log-in .log-text .remember-me p{
+
+.log-in .log-text .remember-me p {
     padding-left: 5px;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-.log-in a{
+
+.log-in a {
     display: block;
     margin-top: 10px;
     color: cornflowerblue;
@@ -112,17 +142,20 @@
     font-weight: 300;
     margin-bottom: 20px;
 }
-.log-in a:hover{
+
+.log-in a:hover {
     font-weight: 600;
 }
-.log-in span{
+
+.log-in span {
     display: block;
     width: 100%;
     height: 1px;
     background-color: darkgray;
     margin-bottom: 22px;
 }
-.log-in .btn-sign-up{
+
+.log-in .btn-sign-up {
     background-color: blue;
     color: white;
     outline-style: outset;
